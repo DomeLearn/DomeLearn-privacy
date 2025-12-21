@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Account - Vibe Learning</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+            max-width: 700px;
+            width: 100%;
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 10px;
+            font-size: 2em;
+        }
+        .subtitle {
+            text-align: center;
+            color: #7f8c8d;
+            margin-bottom: 30px;
+            font-size: 1.1em;
+        }
+        h2 {
+            color: #34495e;
+            margin-top: 30px;
+            font-size: 1.5em;
+        }
+        h3 {
+            color: #7f8c8d;
+            margin-top: 25px;
+            font-size: 1.2em;
+        }
+        .warning-box {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        .warning-box strong {
+            color: #856404;
+        }
+        .info-box {
+            background: #e8f4f8;
+            border-left: 4px solid #3498db;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 4px;
+        }
+        .deletion-data ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        .deletion-data li {
+            margin: 10px 0;
+            padding: 8px;
+            background: #f8f9fa;
+            border-radius: 4px;
+            font-weight: 500;
+        }
+        .steps {
+            counter-reset: step-counter;
+            list-style: none;
+            padding-left: 0;
+        }
+        .steps li {
+            counter-increment: step-counter;
+            margin: 15px 0;
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 6px;
+            position: relative;
+            padding-left: 50px;
+        }
+        .steps li::before {
+            content: counter(step-counter);
+            position: absolute;
+            left: 15px;
+            top: 15px;
+            background: #3498db;
+            color: white;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 14px;
+        }
+        .cta-button {
+            display: inline-block;
+            background: #e74c3c;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            margin: 20px 0;
+            text-align: center;
+            transition: background 0.3s;
+        }
+        .cta-button:hover {
+            background: #c0392b;
+        }
+        .email-template {
+            background: #f8f9fa;
+            border: 1px solid #dee2e6;
+            border-radius: 6px;
+            padding: 20px;
+            font-family: 'Courier New', monospace;
+            font-size: 14px;
+            margin: 20px 0;
+        }
+        .back-link {
+            text-align: center;
+            margin-top: 30px;
+        }
+        .back-link a {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .back-link a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            .container {
+                padding: 20px;
+            }
+            h1 {
+                font-size: 1.6em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🗑️ Delete Account</h1>
+        <div class="subtitle">Vibe Learning - Account Deletion Request</div>
+
+        <div class="warning-box">
+            <strong>⚠️ Warning:</strong> Account deletion is permanent and irreversible. All your data will be permanently erased and cannot be recovered.
+        </div>
+
+        <h2>What Will Be Deleted:</h2>
+        <div class="deletion-data">
+            <ul>
+                <li>✗ Your account identifier (email address)</li>
+                <li>✗ All learning progress and quiz scores</li>
+                <li>✗ All custom-uploaded lessons (JSON files)</li>
+                <li>✗ Course preferences and Bootcamp progress</li>
+                <li>✗ Performance analytics and statistics</li>
+                <li>✗ All personal topics and saved content</li>
+            </ul>
+        </div>
+
+        <h2>How to Request Deletion:</h2>
+        <div class="info-box">
+            <ol class="steps">
+                <li>Send an email to: <strong>asadrabbani1319@gmail.com</strong></li>
+                <li>Use the subject line: <strong>"Account Deletion Request"</strong></li>
+                <li>Include the email address (Account ID) you used to register with Vibe Learning</li>
+                <li>We will process your request within <strong>30 days</strong></li>
+                <li>You will receive a confirmation email once deletion is complete</li>
+            </ol>
+        </div>
+
+        <a href="mailto:asadrabbani1319@gmail.com?subject=Account%20Deletion%20Request&body=I%20would%20like%20to%20delete%20my%20Vibe%20Learning%20account.%0A%0AAccount%20Email%3A%20%5BEnter%20your%20email%20here%5D%0A%0AThank%20you." class="cta-button">
+            📧 Send Deletion Request
+        </a>
+
+        <h3>Email Template:</h3>
+        <div class="email-template">
+Subject: Account Deletion Request
+
+Dear Vibe Learning Support,
+
+I would like to delete my Vibe Learning account and all associated data.
+
+Account Email: [Enter your email address here]
+
+I understand that this action is permanent and irreversible, and that all my learning progress, custom lessons, and account data will be permanently deleted.
+
+Thank you for your assistance.
+
+Best regards,
+[Your Name]
+        </div>
+
+        <div class="info-box">
+            <h3>Alternative Contact Methods:</h3>
+            <p><strong>In-App Support:</strong> You can also contact us through the "About" screen within the Vibe Learning app.</p>
+            <p><strong>Processing Time:</strong> Account deletion requests are typically processed within 5-7 business days, with a maximum of 30 days as stated in our Privacy Policy.</p>
+        </div>
+
+        <div class="back-link">
+            <a href="privacy-policy.html">← Back to Privacy Policy</a>
+        </div>
+
+        <hr style="margin: 40px 0; border: none; border-top: 1px solid #dee2e6;">
+        
+        <p style="text-align: center; color: #7f8c8d; font-size: 14px;">
+            © 2025 Vibe Learning. All rights reserved.
+        </p>
+    </div>
+</body>
+</html>
